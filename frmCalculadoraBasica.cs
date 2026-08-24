@@ -14,5 +14,10 @@ namespace prjMammanoInterfazGrafica
         {
             InitializeComponent();
         }
+
+        private void btnBoca_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show ("BOQUITA CAMPEON THE BIGGEST");
+        }
     }
 }

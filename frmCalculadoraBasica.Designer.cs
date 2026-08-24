@@ -142,6 +142,7 @@
             btnBoca.Size = new Size(48, 41);
             btnBoca.TabIndex = 10;
             btnBoca.UseVisualStyleBackColor = true;
+            btnBoca.Click += btnBoca_Click;
             // 
             // frmCalculadoraBasica
             // 
