@@ -31,8 +31,12 @@ namespace prjMammanoInterfazGrafica
             decimal monto = string.IsNullOrEmpty(txtMonto.Text) ? 0 : Convert.ToDecimal(txtMonto.Text);
 
             decimal subtotal = subtotalActual + monto;
+            lsvListado.Items.Add(txtProducto.Text + txtMonto.Text);
 
             txtSubtotal.Text = subtotal.ToString();
+            txtProducto.Clear();
+            txtMonto.Clear();
+            txtProducto.Focus();
         }
 
         private void txtTotal_TextChanged(object sender, EventArgs e)
@@ -48,6 +52,7 @@ namespace prjMammanoInterfazGrafica
 
             decimal total = subtotal - (descuento * subtotal) / 100;
             txtTotal.Text = total.ToString();
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -61,6 +66,7 @@ namespace prjMammanoInterfazGrafica
             txtProducto.Text = "";
             txtSubtotal.Text = "";
             txtTotal.Text = "";
+            txtProducto.Focus();
         }
 
         private void txtMonto_TextChanged(object sender, EventArgs e)
@@ -71,6 +77,16 @@ namespace prjMammanoInterfazGrafica
         private void txtSubtotal_TextChanged(object sender, EventArgs e)
         {
             btnDescuento.Enabled = true;
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnListado_Click(object sender, EventArgs e)
+        {
+            lsvListado.Visible = true;
         }
     }
 }

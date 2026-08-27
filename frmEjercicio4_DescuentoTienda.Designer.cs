@@ -43,6 +43,10 @@
             txtTotal = new TextBox();
             btnSalir = new Button();
             btnLimpiar = new Button();
+            lsvListado = new ListView();
+            Producto = new ColumnHeader();
+            Monto = new ColumnHeader();
+            btnListado = new Button();
             SuspendLayout();
             // 
             // lblProducto
@@ -90,7 +94,7 @@
             lblSubtotal.Location = new Point(31, 169);
             lblSubtotal.Name = "lblSubtotal";
             lblSubtotal.Size = new Size(98, 26);
-            lblSubtotal.TabIndex = 4;
+            lblSubtotal.TabIndex = 6;
             lblSubtotal.Text = "SUBTOTAL";
             // 
             // txtSubtotal
@@ -99,17 +103,17 @@
             txtSubtotal.Location = new Point(135, 169);
             txtSubtotal.Name = "txtSubtotal";
             txtSubtotal.Size = new Size(153, 23);
-            txtSubtotal.TabIndex = 5;
+            txtSubtotal.TabIndex = 7;
             txtSubtotal.TextChanged += txtSubtotal_TextChanged;
             // 
             // btnRegistrar
             // 
             btnRegistrar.Enabled = false;
-            btnRegistrar.Font = new Font("Lucida Calligraphy", 9F);
+            btnRegistrar.Font = new Font("Microsoft Sans Serif", 9F);
             btnRegistrar.Location = new Point(151, 124);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(113, 23);
-            btnRegistrar.TabIndex = 6;
+            btnRegistrar.TabIndex = 4;
             btnRegistrar.Text = "REGISTRAR";
             btnRegistrar.UseVisualStyleBackColor = true;
             btnRegistrar.Click += btnRegistrar_Click;
@@ -121,13 +125,13 @@
             lblDescuento.Location = new Point(33, 237);
             lblDescuento.Name = "lblDescuento";
             lblDescuento.Size = new Size(88, 26);
-            lblDescuento.TabIndex = 7;
+            lblDescuento.TabIndex = 9;
             lblDescuento.Text = "Descuento";
             // 
             // btnDescuento
             // 
             btnDescuento.Enabled = false;
-            btnDescuento.Font = new Font("Lucida Calligraphy", 9F);
+            btnDescuento.Font = new Font("Microsoft Sans Serif", 9F);
             btnDescuento.Location = new Point(135, 211);
             btnDescuento.Name = "btnDescuento";
             btnDescuento.Size = new Size(198, 23);
@@ -142,7 +146,7 @@
             txtDescuento.Location = new Point(135, 240);
             txtDescuento.Name = "txtDescuento";
             txtDescuento.Size = new Size(45, 23);
-            txtDescuento.TabIndex = 9;
+            txtDescuento.TabIndex = 10;
             txtDescuento.Text = "15";
             txtDescuento.TextAlign = HorizontalAlignment.Center;
             // 
@@ -153,7 +157,7 @@
             lblTotal.Location = new Point(40, 274);
             lblTotal.Name = "lblTotal";
             lblTotal.Size = new Size(65, 26);
-            lblTotal.TabIndex = 10;
+            lblTotal.TabIndex = 11;
             lblTotal.Text = "TOTAL";
             // 
             // txtTotal
@@ -162,30 +166,52 @@
             txtTotal.Location = new Point(135, 278);
             txtTotal.Name = "txtTotal";
             txtTotal.Size = new Size(153, 23);
-            txtTotal.TabIndex = 11;
+            txtTotal.TabIndex = 12;
             txtTotal.TextChanged += txtTotal_TextChanged;
             // 
             // btnSalir
             // 
-            btnSalir.Font = new Font("Lucida Calligraphy", 9F);
+            btnSalir.Font = new Font("Microsoft Sans Serif", 9F);
             btnSalir.Location = new Point(386, 293);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(76, 51);
-            btnSalir.TabIndex = 12;
+            btnSalir.TabIndex = 13;
             btnSalir.Text = "SALIR";
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += btnSalir_Click;
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Font = new Font("Lucida Calligraphy", 9F);
+            btnLimpiar.Font = new Font("Microsoft Sans Serif", 9F);
             btnLimpiar.Location = new Point(323, 112);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(92, 47);
-            btnLimpiar.TabIndex = 13;
+            btnLimpiar.TabIndex = 5;
             btnLimpiar.Text = "LIMPIAR";
             btnLimpiar.UseVisualStyleBackColor = true;
             btnLimpiar.Click += btnLimpiar_Click;
+            // 
+            // lsvListado
+            // 
+            lsvListado.Columns.AddRange(new ColumnHeader[] { Producto, Monto });
+            lsvListado.Enabled = false;
+            lsvListado.Location = new Point(14, 153);
+            lsvListado.Name = "lsvListado";
+            lsvListado.Size = new Size(435, 163);
+            lsvListado.TabIndex = 14;
+            lsvListado.UseCompatibleStateImageBehavior = false;
+            lsvListado.Visible = false;
+            lsvListado.SelectedIndexChanged += listView1_SelectedIndexChanged;
+            // 
+            // btnListado
+            // 
+            btnListado.Location = new Point(323, 169);
+            btnListado.Name = "btnListado";
+            btnListado.Size = new Size(92, 42);
+            btnListado.TabIndex = 15;
+            btnListado.Text = "VER LISTADO";
+            btnListado.UseVisualStyleBackColor = true;
+            btnListado.Click += btnListado_Click;
             // 
             // frmEjercicio4_DescuentoTienda
             // 
@@ -194,6 +220,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(461, 343);
+            Controls.Add(btnListado);
+            Controls.Add(lsvListado);
             Controls.Add(btnLimpiar);
             Controls.Add(btnSalir);
             Controls.Add(txtTotal);
@@ -230,5 +258,9 @@
         private TextBox txtTotal;
         private Button btnSalir;
         private Button btnLimpiar;
+        private ListView lsvListado;
+        private ColumnHeader Producto;
+        private ColumnHeader Monto;
+        private Button btnListado;
     }
 }
