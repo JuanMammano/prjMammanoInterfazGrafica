@@ -8,16 +8,11 @@ using System.Windows.Forms;
 
 namespace prjMammanoInterfazGrafica
 {
-    public partial class frmIG_Caso2 : Form
+    public partial class frmIG_Caso3 : Form
     {
-        public frmIG_Caso2()
+        public frmIG_Caso3()
         {
             InitializeComponent();
-        }
-
-        private void btnBoca_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show ("BOQUITA CAMPEON THE BIGGEST");
         }
     }
 }

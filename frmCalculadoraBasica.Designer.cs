@@ -1,6 +1,6 @@
 ﻿namespace prjMammanoInterfazGrafica
 {
-    partial class frmCalculadoraBasica
+    partial class frmIG_Caso2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalculadoraBasica));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIG_Caso2));
             lblNum1 = new Label();
             lblNum2 = new Label();
             txtNumero1 = new TextBox();
@@ -144,7 +144,7 @@
             btnBoca.UseVisualStyleBackColor = true;
             btnBoca.Click += btnBoca_Click;
             // 
-            // frmCalculadoraBasica
+            // frmIG_Caso2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -162,7 +162,7 @@
             Controls.Add(txtNumero1);
             Controls.Add(lblNum2);
             Controls.Add(lblNum1);
-            Name = "frmCalculadoraBasica";
+            Name = "frmIG_Caso2";
             Text = "Calculadora Basica";
             ResumeLayout(false);
             PerformLayout();
