@@ -27,7 +27,7 @@ namespace prjMammanoInterfazGrafica
 
         private void txtPrecio_TextChanged(object sender, EventArgs e)
         {
-            txtCantidad.Enabled = true;
+            txtCant.Enabled = true;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

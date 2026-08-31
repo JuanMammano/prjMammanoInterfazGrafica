@@ -11,7 +11,7 @@ namespace prjMammanoInterfazGrafica
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmIG_Caso5());
+            Application.Run(new frmIG_Caso8());
         }
     }
 }

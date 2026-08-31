@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIG_Caso5));
             lblIniSes = new Label();
             lblUsu = new Label();
             lblCla = new Label();
@@ -40,10 +41,10 @@
             // lblIniSes
             // 
             lblIniSes.AutoSize = true;
-            lblIniSes.Font = new Font("Poor Richard", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblIniSes.Location = new Point(61, 18);
+            lblIniSes.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblIniSes.Location = new Point(89, 23);
             lblIniSes.Name = "lblIniSes";
-            lblIniSes.Size = new Size(154, 22);
+            lblIniSes.Size = new Size(170, 24);
             lblIniSes.TabIndex = 0;
             lblIniSes.Text = "INICIO DE SESION";
             // 
@@ -51,7 +52,7 @@
             // 
             lblUsu.AutoSize = true;
             lblUsu.Font = new Font("Palatino Linotype", 9F);
-            lblUsu.Location = new Point(23, 55);
+            lblUsu.Location = new Point(58, 92);
             lblUsu.Name = "lblUsu";
             lblUsu.Size = new Size(52, 17);
             lblUsu.TabIndex = 1;
@@ -61,7 +62,7 @@
             // 
             lblCla.AutoSize = true;
             lblCla.Font = new Font("Palatino Linotype", 9F);
-            lblCla.Location = new Point(23, 98);
+            lblCla.Location = new Point(58, 135);
             lblCla.Name = "lblCla";
             lblCla.Size = new Size(41, 17);
             lblCla.TabIndex = 3;
@@ -69,7 +70,7 @@
             // 
             // txtUsu
             // 
-            txtUsu.Location = new Point(92, 52);
+            txtUsu.Location = new Point(127, 89);
             txtUsu.Name = "txtUsu";
             txtUsu.Size = new Size(123, 23);
             txtUsu.TabIndex = 2;
@@ -78,7 +79,7 @@
             // txtCla
             // 
             txtCla.Enabled = false;
-            txtCla.Location = new Point(92, 95);
+            txtCla.Location = new Point(127, 132);
             txtCla.Name = "txtCla";
             txtCla.Size = new Size(123, 23);
             txtCla.TabIndex = 4;
@@ -87,9 +88,9 @@
             // btnIng
             // 
             btnIng.Enabled = false;
-            btnIng.Location = new Point(92, 144);
+            btnIng.Location = new Point(127, 175);
             btnIng.Name = "btnIng";
-            btnIng.Size = new Size(75, 23);
+            btnIng.Size = new Size(90, 39);
             btnIng.TabIndex = 5;
             btnIng.Text = "INGRESAR";
             btnIng.UseVisualStyleBackColor = true;
@@ -100,7 +101,7 @@
             lblInc.AutoSize = true;
             lblInc.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblInc.ForeColor = Color.Red;
-            lblInc.Location = new Point(39, 186);
+            lblInc.Location = new Point(72, 256);
             lblInc.Name = "lblInc";
             lblInc.Size = new Size(210, 17);
             lblInc.TabIndex = 6;
@@ -112,8 +113,9 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
-            BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(279, 239);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(375, 355);
             Controls.Add(lblInc);
             Controls.Add(btnIng);
             Controls.Add(txtCla);

@@ -68,16 +68,20 @@
             txtNumero1.Name = "txtNumero1";
             txtNumero1.Size = new Size(100, 23);
             txtNumero1.TabIndex = 2;
+            txtNumero1.TextChanged += txtNumero1_TextChanged;
             // 
             // txtNumero2
             // 
+            txtNumero2.Enabled = false;
             txtNumero2.Location = new Point(223, 120);
             txtNumero2.Name = "txtNumero2";
             txtNumero2.Size = new Size(100, 23);
             txtNumero2.TabIndex = 3;
+            txtNumero2.TextChanged += txtNumero2_TextChanged;
             // 
             // btnSumar
             // 
+            btnSumar.Enabled = false;
             btnSumar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             btnSumar.Location = new Point(55, 164);
             btnSumar.Name = "btnSumar";
@@ -85,9 +89,11 @@
             btnSumar.TabIndex = 4;
             btnSumar.Text = "+";
             btnSumar.UseVisualStyleBackColor = true;
+            btnSumar.Click += btnSumar_Click;
             // 
             // btnRestar
             // 
+            btnRestar.Enabled = false;
             btnRestar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             btnRestar.Location = new Point(142, 164);
             btnRestar.Name = "btnRestar";
@@ -95,9 +101,11 @@
             btnRestar.TabIndex = 5;
             btnRestar.Text = "-";
             btnRestar.UseVisualStyleBackColor = true;
+            btnRestar.Click += btnRestar_Click;
             // 
             // btnMultiplicar
             // 
+            btnMultiplicar.Enabled = false;
             btnMultiplicar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             btnMultiplicar.Location = new Point(229, 164);
             btnMultiplicar.Name = "btnMultiplicar";
@@ -105,9 +113,11 @@
             btnMultiplicar.TabIndex = 6;
             btnMultiplicar.Text = "x";
             btnMultiplicar.UseVisualStyleBackColor = true;
+            btnMultiplicar.Click += btnMultiplicar_Click;
             // 
             // btnDividir
             // 
+            btnDividir.Enabled = false;
             btnDividir.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             btnDividir.Location = new Point(316, 164);
             btnDividir.Name = "btnDividir";
@@ -115,6 +125,7 @@
             btnDividir.TabIndex = 7;
             btnDividir.Text = "/";
             btnDividir.UseVisualStyleBackColor = true;
+            btnDividir.Click += btnDividir_Click;
             // 
             // lblResultado
             // 
@@ -128,6 +139,7 @@
             // 
             // txtResultado
             // 
+            txtResultado.Enabled = false;
             txtResultado.Location = new Point(223, 211);
             txtResultado.Name = "txtResultado";
             txtResultado.Size = new Size(100, 23);

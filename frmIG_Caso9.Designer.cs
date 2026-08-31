@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIG_Caso9));
             lblGesFarmacia = new Label();
             lblMedicamento = new Label();
             lblLaboratorio = new Label();
@@ -61,6 +62,7 @@
             // lblMedicamento
             // 
             lblMedicamento.AutoSize = true;
+            lblMedicamento.BackColor = Color.DarkGray;
             lblMedicamento.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblMedicamento.Location = new Point(27, 52);
             lblMedicamento.Name = "lblMedicamento";
@@ -71,6 +73,7 @@
             // lblLaboratorio
             // 
             lblLaboratorio.AutoSize = true;
+            lblLaboratorio.BackColor = Color.DarkGray;
             lblLaboratorio.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblLaboratorio.Location = new Point(27, 81);
             lblLaboratorio.Name = "lblLaboratorio";
@@ -81,6 +84,7 @@
             // lblCodigo
             // 
             lblCodigo.AutoSize = true;
+            lblCodigo.BackColor = Color.DarkGray;
             lblCodigo.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblCodigo.Location = new Point(27, 110);
             lblCodigo.Name = "lblCodigo";
@@ -91,6 +95,7 @@
             // lblPrecio
             // 
             lblPrecio.AutoSize = true;
+            lblPrecio.BackColor = Color.DarkGray;
             lblPrecio.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblPrecio.Location = new Point(27, 139);
             lblPrecio.Name = "lblPrecio";
@@ -101,6 +106,7 @@
             // lblStock
             // 
             lblStock.AutoSize = true;
+            lblStock.BackColor = Color.DarkGray;
             lblStock.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblStock.Location = new Point(27, 168);
             lblStock.Name = "lblStock";
@@ -146,6 +152,7 @@
             // lblTipo
             // 
             lblTipo.AutoSize = true;
+            lblTipo.BackColor = Color.DarkGray;
             lblTipo.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblTipo.Location = new Point(27, 192);
             lblTipo.Name = "lblTipo";
@@ -192,7 +199,7 @@
             // lstMedicamentos
             // 
             lstMedicamentos.FormattingEnabled = true;
-            lstMedicamentos.Location = new Point(27, 302);
+            lstMedicamentos.Location = new Point(27, 311);
             lstMedicamentos.Name = "lstMedicamentos";
             lstMedicamentos.Size = new Size(359, 109);
             lstMedicamentos.TabIndex = 16;
@@ -211,6 +218,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightGray;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(438, 479);
             Controls.Add(btnBuscar);
             Controls.Add(lstMedicamentos);

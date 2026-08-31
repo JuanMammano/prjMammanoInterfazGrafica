@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIG_Caso6));
             lblAgenda = new Label();
             lblNombre = new Label();
             lblTelefono = new Label();
@@ -42,7 +43,7 @@
             // 
             lblAgenda.AutoSize = true;
             lblAgenda.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblAgenda.Location = new Point(138, 9);
+            lblAgenda.Location = new Point(169, 8);
             lblAgenda.Name = "lblAgenda";
             lblAgenda.Size = new Size(78, 21);
             lblAgenda.TabIndex = 0;
@@ -52,7 +53,7 @@
             // 
             lblNombre.AutoSize = true;
             lblNombre.Font = new Font("Segoe Print", 9.75F);
-            lblNombre.Location = new Point(66, 58);
+            lblNombre.Location = new Point(97, 57);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(63, 23);
             lblNombre.TabIndex = 1;
@@ -62,7 +63,7 @@
             // 
             lblTelefono.AutoSize = true;
             lblTelefono.Font = new Font("Segoe Print", 9.75F);
-            lblTelefono.Location = new Point(92, 104);
+            lblTelefono.Location = new Point(123, 103);
             lblTelefono.Name = "lblTelefono";
             lblTelefono.Size = new Size(34, 23);
             lblTelefono.TabIndex = 3;
@@ -70,22 +71,22 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(138, 58);
+            txtNombre.Location = new Point(169, 57);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(100, 23);
             txtNombre.TabIndex = 2;
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new Point(138, 104);
+            txtTelefono.Location = new Point(169, 103);
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(100, 23);
             txtTelefono.TabIndex = 4;
             // 
             // btnAgregar
             // 
-            btnAgregar.Font = new Font("Wide Latin", 9F);
-            btnAgregar.Location = new Point(39, 151);
+            btnAgregar.Font = new Font("Microsoft Sans Serif", 9F);
+            btnAgregar.Location = new Point(70, 150);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(143, 31);
             btnAgregar.TabIndex = 5;
@@ -94,8 +95,8 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Font = new Font("Wide Latin", 9F);
-            btnEliminar.Location = new Point(188, 151);
+            btnEliminar.Font = new Font("Microsoft Sans Serif", 9F);
+            btnEliminar.Location = new Point(219, 150);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(143, 31);
             btnEliminar.TabIndex = 6;
@@ -107,7 +108,7 @@
             lstAgenda.BackColor = SystemColors.MenuHighlight;
             lstAgenda.Font = new Font("MS PGothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lstAgenda.FormattingEnabled = true;
-            lstAgenda.Location = new Point(20, 200);
+            lstAgenda.Location = new Point(51, 199);
             lstAgenda.Name = "lstAgenda";
             lstAgenda.Size = new Size(311, 95);
             lstAgenda.TabIndex = 7;
@@ -117,7 +118,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSalmon;
-            ClientSize = new Size(350, 312);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(415, 350);
             Controls.Add(lstAgenda);
             Controls.Add(btnEliminar);
             Controls.Add(btnAgregar);
